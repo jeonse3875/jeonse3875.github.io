@@ -459,7 +459,8 @@
 /* Image */
 
 	.image {
-		border: 7px solid rgba(144, 144, 144, 0.25);
+		border-radius: 6px;
+		border: 2px solid rgba(144, 144, 144, 0.25);
 		display: inline-block;
 		position: relative;
 	}
@@ -983,20 +984,9 @@
 
 /* Banner */
 
-	#banner1 {
-		background-image: url("../images/banner1.jpg");
-	}
-	#banner2 {
-		background-image: url("../images/banner2.jpg");
-	}
-	#banner3 {
-		background-image: url("../images/banner1.jpg");
-	}
-	#banner4 {
-		background-image: url("../images/banner2.jpg");
-	}
-	.banner {
+	#banner {
 		background-color: #666666;
+		background-image: url("../images/banner1.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1006,7 +996,7 @@
 		position: relative;
 	}
 		/*
-		.banner:before {
+		#banner:before {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -1017,53 +1007,53 @@
 		}
 		*/
 
-		.banner .inner {
+		#banner .inner {
 			position: relative;
 			z-index: 1;
 		}
 
-			.banner .inner :last-child {
+			#banner .inner :last-child {
 				margin-bottom: 0;
 			}
 
-		.banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
+		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #ffffff;
 		}
 
-		.banner .button.alt {
+		#banner .button.alt {
 			box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.75);
 			color: #ffffff !important;
 		}
 
-			.banner .button.alt:hover {
+			#banner .button.alt:hover {
 				background-color: #666666;
 			}
 
-			.banner .button.alt:active {
+			#banner .button.alt:active {
 				background-color: #666666;
 			}
 
-			.banner .button.alt.icon:before {
+			#banner .button.alt.icon:before {
 				color: #c1c1c1;
 			}
 
-		.banner .button {
+		#banner .button {
 			min-width: 12em;
 		}
 
-		.banner h2 {
+		#banner h2 {
 			font-size: 3.5em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
 
-		.banner p {
+		#banner p {
 			font-size: 1.5em;
 			margin-bottom: 2em;
 		}
 
-			.banner p a {
+			#banner p a {
 				color: #ffffff;
 				text-decoration: none;
 			}
