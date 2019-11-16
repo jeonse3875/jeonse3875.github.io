@@ -459,8 +459,7 @@
 /* Image */
 
 	.image {
-		border-radius: 12px;
-		border: 0;
+		border-radius: 6px;
 		display: inline-block;
 		position: relative;
 	}
@@ -995,7 +994,7 @@
 		text-align: center;
 		position: relative;
 	}
-
+		/*
 		#banner:before {
 			content: '';
 			position: absolute;
@@ -1005,6 +1004,7 @@
 			height: 100%;
 			background: rgba(64, 72, 80, 0.25);
 		}
+		*/
 
 		#banner .inner {
 			position: relative;
@@ -1056,11 +1056,12 @@
 				color: #ffffff;
 				text-decoration: none;
 			}
-
-		.slided ul,.slide li{padding: 0;margin:0;list-style:none;}
+		
+		.slide {margin-bottom: 0;}
+		.slideUl,.slideLi{padding: 0;margin:0;list-style:none;}
 		.slide{height:100%;overflow:hidden;}
-		.slide ul{width:calc(100% * 4);display:flex;animation:slide 16s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
-		.slide li{width:calc(100% / 4);height:100%;}
+		.slideUl{width:calc(100% * 4);display:flex;animation:slide 16s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+		.slideLi{width:calc(100% / 4);height:100%;}
 		@keyframes slide {
 			0% {margin-left:0;} /* 0 ~ 10  : 정지 */
 			20% {margin-left:0;} /* 10 ~ 25 : 변이 */
